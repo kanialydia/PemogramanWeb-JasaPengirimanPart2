@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg no-smil svgclippaths">
+<head>
+<title></title>
+<style>
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+header {
+	position: relative;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+body {
+	margin: 0;
+}
+body {
+	color: #666;
+	font-size: 14px;
+	font-family: "Roboto",sans-serif;
+	font-weight: 400;
+}
+html {
+	background: #fff;
+	color: #000;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+html, button, input, select, textarea {
+	font-family: sans-serif;
+}
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+header .logo {
+	float: left;
+}
+header nav {
+	float: right;
+}
+#nav_mobile {
+	display: none;
+}
+.fly-but-wrap {
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	position: relative;
+}
+.fly-but-wrap span {
+	background: #e11b22;
+	display: block;
+	position: absolute;
+	left: 0px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-ms-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+	width: 100%;
+	height: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.fly-but-wrap span:nth-child(1) {
+	top: 15.5px;
+}
+.fly-but-wrap span:nth-child(2), .fly-but-wrap span:nth-child(3) {
+	top: 25.5px;
+}
+.fly-but-wrap span:nth-child(4) {
+	top: 35.5px;
+}
+dl, menu, ol, ul {
+	margin: 1em 0;
+}
+menu, ol, ul {
+	padding: 0 0 0 40px;
+}
+nav ul, nav ol {
+	list-style: none;
+	list-style-image: none;
+}
+form {
+	margin: 0;
+}
+header nav ul, header nav form {
+	display: inline-block;
+	vertical-align: bottom;
+}
+header nav ul {
+	padding: 0px;
+	list-style-type: none;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+a {
+	text-decoration: none;
+}
+header nav form .language, header nav form .language a {
+	text-transform: uppercase;
+	color: #999;
+	display: inline-block;
+	margin-right: 3px;
+}
+header nav form .language {
+	display: block;
+	text-align: right;
+	padding-right: 8px;
+	margin-bottom: 3px;
+}
+header nav form .search {
+	border: 2px solid #d8d8d8;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding: 5px;
+}
+input, textarea, select {
+	font-size: 12px;
+	font-family: arial,tahoma,times new roman;
+	border: none;
+	border: 1px solid #D8D8D8;
+	padding: 4px;
+	margin: 0;
+	color: #666;
+}
+button, input {
+	line-height: normal;
+}
+input, textarea, select {
+	font-size: 14px;
+	font-family: "Roboto",sans-serif;
+	border: none;
+	border: 1px solid #D8D8D8;
+	padding: 10px;
+	margin: 0;
+	color: #666;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	outline: 0;
+}
+button {
+	padding: 12px 20px;
+	text-transform: uppercase;
+	color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 0;
+	font-weight: 700;
+}
+header nav form .search input, header nav form .search button {
+	outline: 0;
+	border: 0;
+	background: transparent;
+}
+header nav form .search input {
+	font-size: 12px;
+	padding: 5px;
+}
+button, select {
+	text-transform: none;
+}
+button, html input[type='button'], input[type='reset'], input[type='submit'] {
+	-webkit-appearance: button;
+	cursor: pointer;
+	*overflow: visible: ;
+}
+header nav form .search button {
+	padding: 5px;
+}
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+header nav form .search button i {
+	color: #db321c;
+}
+header nav form .language a.active {
+	color: #db321c;
+}
+header nav ul li {
+	float: left;
+	position: relative;
+}
+header nav ul li a {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 15px;
+	color: #666;
+}
+header nav ul li a:hover, header nav ul li a.active {
+	color: #db321c;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}
+</style>
+</head>
+<body><header>
+	<div class="wrapper afterclear">
+                
+		<div class="logo"><a href="http://www.jne.co.id/id/beranda"><img src="http://www.jne.co.id/frontend/images/material/logo.jpg"></a></div>
+    
+    <!--<div class="logo"><a href="http://www.jne.co.id/id/beranda"><img src="http://www.jne.co.id/frontend/images/material/Tema-Nyepi-2018-Logo-JNE.PNG" style="max-width:190px;margin:0;padding:0"></a></div>-->
+       
+		<nav>
+			<ul>
+                
+                    
+                    <li>    
+                            <a href="http://www.jne.co.id/id/perusahaan/profil-perusahaan/visi-dan-misi">Perusahaan</a>
+
+                    </li>
+                
+                
+                    
+                    <li>    
+                            <a href="http://www.jne.co.id/id/produk-dan-layanan/jne-express">Produk &amp; Layanan</a>
+
+                    </li>
+                
+                
+                    
+                    <li>    
+                            <a class="active" href="http://www.jne.co.id/id/solusi-bisnis/kemitraan/keagenan">Solusi Bisnis</a>
+
+                    </li>
+                
+                
+                    
+                    <li>    
+                            <a href="http://www.jne.co.id/id/karir">Karir</a>
+
+                    </li>
+                
+                
+                    
+                    <li>    
+                            <a href="http://www.jne.co.id/id/hubungi-kami/our-information">Hubungi Kami</a>
+
+                    </li>
+                
+                				<!--li><a href="http://www.jne.co.id/frontend/corporate.php" >Perusahaan</a></li>
+				<li><a href="http://www.jne.co.id/frontend/product-01-01.php" >Produk & Layanan</a></li>
+				<li><a href="http://www.jne.co.id/frontend/business-01.php" >Solusi Bisnis</a></li>
+				<li><a href="http://www.jne.co.id/frontend/career.php" >Karir</a></li>
+				<li><a href="http://www.jne.co.id/frontend/contact.php" >Hubungi Kami</a></li-->
+			</ul>
+			<form action="http://www.jne.co.id/id/search" method="get">
+				<div class="language">&nbsp;<a href="http://www.jne.co.id/en/changeLang">EN</a> | <a class="active" href="http://www.jne.co.id/id/changeLang">ID</a></div> 
+				<div class="search"><input name="keyword" type="text" placeholder="Search Keywords"> <button type="submit"><i class="fa fa-search"></i></button></div>
+			</form>
+            
+            <!--<div style="float:right; margin-left:10px;"><img width="50" style="margin:0; padding:0;" src="http://www.jne.co.id/frontend/images/material/logo_ramadan_kanan.png"></div>-->
+            
+        </nav>
+
+        <nav id="nav_mobile">
+            <div class="fly-but-wrap">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+         </nav>
+
+             
+	</div>
+</header></body>
+</html>
